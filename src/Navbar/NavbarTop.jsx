@@ -1,47 +1,67 @@
-import { Avatar, Dropdown, Navbar } from "flowbite-react";
 
 
-const NavbarTop = () => {
-    return (
-        <>
-            <Navbar fluid rounded>
-                <Navbar.Brand href="https://flowbite-react.com">
-                    <img src="/favicon.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" />
-                    <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Flowbite React</span>
-                </Navbar.Brand>
 
-                <Navbar.Collapse>
-                    <Navbar.Link href="#" active>
-                        Home
-                    </Navbar.Link>
-                    <Navbar.Link href="#">About</Navbar.Link>
-                    <Navbar.Link href="#">Services</Navbar.Link>
-                    <Navbar.Link href="#">Pricing</Navbar.Link>
-                    <Navbar.Link href="#">Contact</Navbar.Link>
-                </Navbar.Collapse>
-                <div className="flex md:order-2">
-                    <Dropdown
-                        arrowIcon={false}
-                        inline
-                        label={
-                            <Avatar alt="User settings" img="https://flowbite.com/docs/images/people/profile-picture-5.jpg" rounded />
-                        }
-                    >
-                        <Dropdown.Header>
-                            <span className="block text-sm">Bonnie Green</span>
-                            <span className="block truncate text-sm font-medium">name@flowbite.com</span>
-                        </Dropdown.Header>
-                        <Dropdown.Item>Dashboard</Dropdown.Item>
-                        <Dropdown.Item>Settings</Dropdown.Item>
-                        <Dropdown.Item>Earnings</Dropdown.Item>
-                        <Dropdown.Divider />
-                        <Dropdown.Item>Sign out</Dropdown.Item>
-                    </Dropdown>
-                    <Navbar.Toggle />
-                </div>
-            </Navbar>
-        </>
-    );
-};
+import React, { useState } from 'react';
 
-export default NavbarTop;
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <nav className="relative bg-white shadow dark:bg-gray-800">
+      <div className="container px-6 py-4 mx-auto">
+        <div className="lg:flex lg:items-center lg:justify-between">
+          <div className="flex items-center justify-between">
+            <a href="#">
+              <img
+                className="w-auto h-6 sm:h-7"
+                src="https://merakiui.com/images/full-logo.svg"
+                alt=""
+              />
+            </a>
+
+            {/* Mobile menu button */}
+            <div className="flex lg:hidden">
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                type="button"
+                className="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
+                aria-label="toggle menu"
+              >
+                {!isOpen ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-6 h-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M4 8h16M4 16h16"
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-6 h-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                )}
+              </button>
+            </div>
+          </div>
+
+          {/* Mobile Menu open: "block", Menu closed: "hidden" */}
+          <div
+            className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in
