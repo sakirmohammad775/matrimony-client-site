@@ -1,5 +1,6 @@
 import { Avatar, Dropdown, Navbar } from "flowbite-react";
 import logo from "../assets/kevinRushLogo.png"
+import { FaGithub, FaInstagram } from "react-icons/fa";
 
 const NavbarTop = () => {
   return (
@@ -9,6 +10,10 @@ const NavbarTop = () => {
           <img src={logo} className="mr-3 h-6 sm:h-9" />
         </Navbar.Brand>
         <div className="flex md:order-2">
+          <div className="flex mt-2 gap-3 mr-4">
+            <FaInstagram className="w-6 h-6"/>
+            <FaGithub className="h-6 w-6"/>
+            </div>
           <Dropdown
             arrowIcon={false}
             inline
