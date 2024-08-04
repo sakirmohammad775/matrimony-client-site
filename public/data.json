@@ -1,0 +1,75 @@
+[
+    {
+      "BioDataId": 1,
+      "BioDataType": "Male",
+      "ProfileImage": "https://example.com/images/profile1.jpg",
+      "PermanentDivisionName": "Dhaka",
+      "Age": 23,
+      "Occupation": "Student",
+      "ViewProfile": "https://example.com/profile/1"
+    },
+    {
+      "BioDataId": 2,
+      "BioDataType": "Female",
+      "ProfileImage": "https://example.com/images/profile2.jpg",
+      "PermanentDivisionName": "Chattogram",
+      "Age": 45,
+      "Occupation": "House wife",
+      "ViewProfile": "https://example.com/profile/2"
+    },
+    {
+      "BioDataId": 3,
+      "BioDataType": "Male",
+      "ProfileImage": "https://example.com/images/profile3.jpg",
+      "PermanentDivisionName": "Rangpur",
+      "Age": 30,
+      "Occupation": "Job",
+      "ViewProfile": "https://example.com/profile/3"
+    },
+    {
+      "BioDataId": 4,
+      "BioDataType": "Female",
+      "ProfileImage": "https://example.com/images/profile4.jpg",
+      "PermanentDivisionName": "Barisal",
+      "Age": 23,
+      "Occupation": "Student",
+      "ViewProfile": "https://example.com/profile/4"
+    },
+    {
+      "BioDataId": 5,
+      "BioDataType": "Male",
+      "ProfileImage": "https://example.com/images/profile5.jpg",
+      "PermanentDivisionName": "Khulna",
+      "Age": 45,
+      "Occupation": "Job",
+      "ViewProfile": "https://example.com/profile/5"
+    },
+    {
+      "BioDataId": 6,
+      "BioDataType": "Female",
+      "ProfileImage": "https://example.com/images/profile6.jpg",
+      "PermanentDivisionName": "Mymensingh",
+      "Age": 30,
+      "Occupation": "House wife",
+      "ViewProfile": "https://example.com/profile/6"
+    },
+    {
+      "BioDataId": 7,
+      "BioDataType": "Male",
+      "ProfileImage": "https://example.com/images/profile7.jpg",
+      "PermanentDivisionName": "Sylhet",
+      "Age": 23,
+      "Occupation": "Student",
+      "ViewProfile": "https://example.com/profile/7"
+    },
+    {
+      "BioDataId": 8,
+      "BioDataType": "Female",
+      "ProfileImage": "https://example.com/images/profile8.jpg",
+      "PermanentDivisionName": "Dhaka",
+      "Age": 45,
+      "Occupation": "House wife",
+      "ViewProfile": "https://example.com/profile/8"
+    }
+  ]
+  
